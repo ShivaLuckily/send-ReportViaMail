@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.sample.Test.ScrollBar">
+        <methods>
+          <include name="email"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.sample.Test.ScrollBar -->
+      <class name="com.sample.bimbo.FrameProgram">
+        <methods>
+          <include name="display3"/>
+        </methods>
+      </class> <!-- com.sample.bimbo.FrameProgram -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <classes>
+      <class name="com.sample.Test.ScrollBar">
+        <methods>
+          <include name="email"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.sample.Test.ScrollBar -->
+      <class name="com.sample.Test.IETesting">
+        <methods>
+          <include name="display"/>
+        </methods>
+      </class> <!-- com.sample.Test.IETesting -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
