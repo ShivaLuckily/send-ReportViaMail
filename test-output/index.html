@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,12 +48,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\workspace\SampleProject\testng.xml</span>
+                    <span>E:\workspace\SampleProject\testngparallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,26 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.Test.IETesting" hash-for-method="display">display</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.bimbo.FrameProgram" hash-for-method="display3">display3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,12 +101,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.Test.ScrollBar" hash-for-method="display">display</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.bimbo.Fileupload" hash-for-method="display1">display1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.bimbo.Fileupload" hash-for-method="display1">display1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sample.bimbo.FrameProgram" hash-for-method="display3">display3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -140,32 +121,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.sample.Test.IETesting</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="display">
-                  </a> <!-- display -->
-                  <span class="method-name">display</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.sample.Test.IETesting.display(IETesting.java:22)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.sample.bimbo.FrameProgram</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -174,18 +132,10 @@
                   <a name="display3">
                   </a> <!-- display3 -->
                   <span class="method-name">display3</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.sample.bimbo.FrameProgram.display3(FrameProgram.java:24)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -201,50 +151,24 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.sample.Test.ScrollBar</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="display">
-                  </a> <!-- display -->
-                  <span class="method-name">display</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\workspace\SampleProject\testng.xml</span>
+            <span class="header-content">E:\workspace\SampleProject\testngparallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;ExtentReportListener.ExtentReporterNG&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test name=&quot;Test1&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;Test2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;packages&gt;
       &lt;package name=&quot;com.sample.bimbo&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.sample.bimbo.Fileupload&quot;/&gt;
       &lt;class name=&quot;com.sample.bimbo.FrameProgram&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test name=&quot;Test2&quot;&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;com.sample.Test&quot;/&gt;
-    &lt;/packages&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.sample.Test.IETesting&quot;/&gt;
-      &lt;class name=&quot;com.sample.Test.ScrollBar&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -257,9 +181,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">Test1 (2 classes)</span>
-              </li>
               <li>
                 <span class="test-name">Test2 (2 classes)</span>
               </li>
@@ -287,28 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'display')
-data.setCell(0, 2, 'com.sample.Test.ScrollBar')
-data.setCell(0, 3, 12184);
+data.setCell(0, 1, 'display1')
+data.setCell(0, 2, 'com.sample.bimbo.Fileupload')
+data.setCell(0, 3, 8242);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'display1')
-data.setCell(1, 2, 'com.sample.bimbo.Fileupload')
-data.setCell(1, 3, 9082);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'display')
-data.setCell(2, 2, 'com.sample.Test.IETesting')
-data.setCell(2, 3, 28);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'display3')
-data.setCell(3, 2, 'com.sample.bimbo.FrameProgram')
-data.setCell(3, 3, 4);
+data.setCell(1, 1, 'display3')
+data.setCell(1, 2, 'com.sample.bimbo.FrameProgram')
+data.setCell(1, 3, 7126);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,27 +236,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sample.Test.IETesting</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">email</span>
-                <br/>
-                <span class="ignored-method-name">start</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sample.bimbo.FrameProgram</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">email</span>
-                <br/>
-                <span class="ignored-method-name">start</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -352,50 +247,43 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sample.Test.ScrollBar</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">start</span>
+              <div class="chronological-class-name">com.sample.bimbo.Fileupload</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">start(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sample.Test.IETesting</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sample.bimbo.FrameProgram</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">start(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">display</span>
-                <span class="method-start">4751 ms</span>
+                <span class="method-name">display3</span>
+                <span class="method-start">5376 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sample.bimbo.Fileupload</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">display1</span>
-                <span class="method-start">4751 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.sample.Test.ScrollBar</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">display</span>
-                <span class="method-start">4799 ms</span>
+                <span class="method-start">5526 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sample.bimbo.FrameProgram</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">display3</span>
-                <span class="method-start">13837 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">email</span>
+                <span class="method-start">12505 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sample.Test.ScrollBar</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
+              <div class="chronological-class-name">com.sample.bimbo.Fileupload</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
                 <span class="method-name">email</span>
-                <span class="method-start">17059 ms</span>
-              </div> <!-- configuration-suite after -->
+                <span class="method-start">13771 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -4,17 +4,21 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
 import common.BaseClass;
 
-public class ScrollBar extends BaseClass {
+public class ScrollBar {
 	
 	@Test
 	
 	public void display() throws InterruptedException{
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Shipra Mandal\\Downloads\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
 					driver.get("http://www.snapdeal.com/");
 					

@@ -4,35 +4,53 @@ import java.io.IOException;
 
 import javax.mail.MessagingException;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+
+import com.sample.bimbo.parallel.BrowserFactory;
+import com.sample.bimbo.parallel.DriverFactory;
 
 
 
 public class BaseClass {
 	
 	
-	public WebDriver driver;
-		
+public WebDriver driver;
 	
 	
-	@BeforeSuite
-	public void start(){
+	@BeforeMethod
+	@Parameters({"browser"})
+	public void start(String browser){
 		
-		System.setProperty("webdriver.ie.driver","C:\\Program Files\\Internet Explorer\\IEDriverServer.exe");
+		driver = BrowserFactory.createInstance(browser);
+		DriverFactory.getInstance().setDriver(driver);
+		driver=DriverFactory.getInstance().getDriver();
+		
+		
+		/*System.setProperty("webdriver.ie.driver","C:\\Program Files\\Internet Explorer\\IEDriverServer.exe");
 		driver = new InternetExplorerDriver();
-		System.out.println("Start before suite");	
+		System.out.println("Start before suite");*/	
+		System.out.println("Thread id"+Thread.currentThread().getId());	
 	}
 	
-	@AfterSuite	
+	@AfterMethod
 	
 	
      public void email() throws InterruptedException{
-		driver.close();
-		Thread t = new Thread()
+		
+		DriverFactory.getInstance().removeDriver();
+		//driver.close();
+		//System.out.println("Start after suite");
+		/*Thread t = new Thread()
 		{
 		    public void run() {
 		    	Mailing sm = new Mailing();
@@ -48,7 +66,7 @@ public class BaseClass {
 		};
 		Thread.sleep(10000);
 		t.start();
-		t.join();
+		t.join();*/
 		
 		
 		

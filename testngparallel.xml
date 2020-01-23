@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Suite" parallel="methods" >
+
+
+
+   <!--  <test name="com.FirstTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+      <class name="com.sample.bimbo.Fileupload"/>
+      
+    </classes>
+  </test> 
+  
+   <test name="Test2">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+     <class name="com.sample.bimbo.FrameProgram"/>   
+    </classes>
+  </test>  --> 
+  
+  <test name="Test2">
+   <parameter name="browser" value="chrome"/>
+    <packages>
+			<package name="com.sample.bimbo" />
+		</packages>
+  
+  </test>
+  
+</suite> <!-- Suite -->
